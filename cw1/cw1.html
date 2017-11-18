@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ćwicznie 1 - pętle</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<h1>Ćwicznie 1 - pętle</h1>
+    <h2>Pętla for(...;...;..){...}</h2>
+    <script type="text/javascript">
+    	for(var i=1; i<=6; i++){
+    		document.write("<h"+i+">Nagłówek</h"+i+">");
+    	}
+    </script>
+    <h2>Pętla do{....}while(...)</h2>
+    <script type="text/javascript">
+    	var liczba=0;
+    	var licznik=0;
+    	do{
+    		liczba = Math.floor(Math.random()*20);
+    		document.write(liczba+" ");
+    		if(liczba!=0) licznik++;
+    	}while(liczba!=0);
+    	document.write("<p>Ilość liczb: "+licznik+"</p>");
+    </script>
+     <h2>Pętla while(...){...}</h2>
+     <script type="text/javascript">
+     	var suma=0;
+     	while(suma<100){
+     		liczba = Math.floor(Math.random()*20);
+     		suma += liczba;
+     		document.write(liczba);
+     		if(suma<100) document.write(" + ");
+     	}
+     	document.write(" = "+suma);
+     </script>
+</body>
+</html>
