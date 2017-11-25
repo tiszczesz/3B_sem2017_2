@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ćwiczenie 3 - zgadywanka</title>
+        <meta charset="UTF-8">        
+    </head>
+    <body>
+        <h1>Ćwiczenie 3 - zgadywanka</h1>
+        <script type="text/javascript">
+            window.onload = start;
+            function start(){
+                var secret = Math.floor(Math.random()*50);
+                do{                    
+                    var wybor = parseInt(prompt("Zgadnij liczbę:"));
+                   // alert(wybor);
+                    if( isNaN(wybor)){
+                        document.write("<p>Anulowano</p>");
+                        return;}
+                    console.log("sec="+secret+" wyb="+wybor);                   
+                    if(wybor>secret){
+                       alert("Za dużo");
+                    }else if(wybor<secret){
+                       alert("Za mało");
+                    }else{
+                        document.write("<p style='color:green'>BRAWO!!</p>");
+                    }
+                }while(wybor!=secret);
+            }
+        </script>
+    </body>
+</html>
