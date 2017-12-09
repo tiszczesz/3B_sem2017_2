@@ -1,0 +1,20 @@
+h1{
+    margin: auto;
+    text-align: center;
+    border-bottom: solid thin grey;
+    margin-bottom: 20px;
+   
+}
+input[type="button"]{
+    margin: 10px;
+    margin-left: 40px;
+    padding: 6px;
+    width: 150px;
+}
+input[type="number"]{
+    margin-left: 6px;
+}
+select{
+    margin-left: 40px;
+     margin-top: 10px;
+}
